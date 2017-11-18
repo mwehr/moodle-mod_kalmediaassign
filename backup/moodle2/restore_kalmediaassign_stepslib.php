@@ -26,6 +26,12 @@ require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/config.ph
 
 defined('MOODLE_INTERNAL') || die();
 
+global $PAGE;
+
+$PAGE->set_url('/mod/kalmediares/backup/moodle2/restore_kalmediaassign_stepslib.php');
+
+require_login();
+
 /**
  * Define all the restore steps that will be used by the restore_kalmediaassign_activity_task
  */

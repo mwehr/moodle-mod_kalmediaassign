@@ -28,6 +28,12 @@ require_once(dirname(__FILE__) . '/restore_kalmediaassign_stepslib.php');
 
 defined('MOODLE_INTERNAL') || die();
 
+global $PAGE;
+
+$PAGE->set_url('/mod/kalmediares/backup/moodle2/restore_kalmediaassign_activity_task.class.php');
+
+require_login();
+
 /**
  * kalmediaassign restore task.
  * @package   mod_kalmediaassign
