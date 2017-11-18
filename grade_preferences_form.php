@@ -27,10 +27,7 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/course/moodleform_mod.php')
 require_once(dirname(__FILE__) . '/locallib.php');
 require_once($CFG->libdir.'/formslib.php');
 
-if (!defined('MOODLE_INTERNAL')) {
-    // It must be included from a Moodle page.
-    die('Direct access to this script is forbidden.');
-}
+defined('MOODLE_INTERNAL') || die();
 
 global $PAGE, $COURSE;
 

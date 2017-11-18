@@ -24,11 +24,7 @@
 
 require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/config.php');
 
-global $PAGE;
-
-$PAGE->set_url('/mod/kalmediaassign/backup/moodle2/restore_kalmediaassign_stepslib.class.php');
-
-require_login();
+defined('MOODLE_INTERNAL') || die();
 
 /**
  * Define all the restore steps that will be used by the restore_kalmediaassign_activity_task
