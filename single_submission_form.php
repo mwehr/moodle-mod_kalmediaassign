@@ -28,6 +28,8 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/local/yukaltura/locallib.ph
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 /**
  * Class for display single submission form.
  * @package   mod_kalmediaassign

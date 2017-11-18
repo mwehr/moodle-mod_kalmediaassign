@@ -30,6 +30,8 @@ require_once(dirname(__FILE__) . '/single_submission_form.php');
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 $id = required_param('cmid', PARAM_INT); // Course Module ID.
 $userid = required_param('userid', PARAM_INT);
 $tifirst = optional_param('tifirst', '', PARAM_TEXT);

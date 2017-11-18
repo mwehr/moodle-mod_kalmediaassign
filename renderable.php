@@ -24,6 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 /**
  * Renderable class of YU Kaltura Media assignment.
  *

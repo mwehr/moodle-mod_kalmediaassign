@@ -27,6 +27,8 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/course/moodleform_mod.php')
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 /**
  * class of YU Kaltura Media assignment grade/submission form.
  * @package mod_kalmediaassign

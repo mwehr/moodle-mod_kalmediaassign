@@ -31,6 +31,8 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/local/yukaltura/kaltura_ent
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 /**
  * Table class for displaying media submissions for grading.
  * @package   mod_kalmediaassign

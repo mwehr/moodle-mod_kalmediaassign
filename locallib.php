@@ -34,6 +34,8 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/local/yukaltura/locallib.ph
 
 defined('MOODLE_INTERNAL') || die();
 
+require_login();
+
 /**
  * Check if the assignment submission end date has passed or if late submissions
  * are prohibited.
