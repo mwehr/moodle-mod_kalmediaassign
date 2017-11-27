@@ -28,7 +28,7 @@ require_once(dirname(__FILE__) . '/backup_kalmediaassign_stepslib.php');
 // Because it exists (optional).
 require_once(dirname(__FILE__) . '/backup_kalmediaassign_settingslib.php');
 
-defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') || die;
 
 global $PAGE;
 

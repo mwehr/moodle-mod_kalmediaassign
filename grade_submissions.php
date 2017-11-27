@@ -28,7 +28,10 @@ require_once(dirname(__FILE__) . '/renderer.php');
 require_once(dirname(__FILE__) . '/locallib.php');
 require_once(dirname(__FILE__) . '/grade_preferences_form.php');
 
-defined('MOODLE_INTERNAL') || die();
+if (!defined('MOODLE_INTERNAL')) {
+    // It must be included from a Moodle page.
+    die('Direct access to this script is forbidden.');
+}
 
 $id      = required_param('cmid', PARAM_INT); // Course Module ID.
 $mode    = optional_param('mode', 0, PARAM_TEXT);
@@ -84,7 +87,7 @@ $modalheight = 0;
 $mediawidth  = 0;
 $mediaheight = 0;
 
-list($modalwidth, $modalheight) = kalmediaassign_get_player_dimensions();
+list($modalwidth, $modalheight) = kalmediaassign_get_popup_player_dimensions();
 $mediawidth = $modalwidth - KALTURA_POPUP_WIDTH_ADJUSTMENT;
 $mediaheight = $modalheight - KALTURA_POPUP_HEIGHT_ADJUSTMENT;
 

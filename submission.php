@@ -25,9 +25,10 @@
 require_once(dirname(dirname(dirname(__FILE__))) . '/config.php');
 require_once(dirname(__FILE__) . '/locallib.php');
 
-defined('MOODLE_INTERNAL') || die();
-
-require_login();
+if (!defined('MOODLE_INTERNAL')) {
+    // It must be included from a Moodle page.
+    die('Direct access to this script is forbidden.');
+}
 
 if (!confirm_sesskey()) {
     print_error('confirmsesskeybad', 'error');

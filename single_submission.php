@@ -28,9 +28,10 @@ require_once(dirname(__FILE__) . '/renderer.php');
 require_once(dirname(__FILE__) . '/locallib.php');
 require_once(dirname(__FILE__) . '/single_submission_form.php');
 
-defined('MOODLE_INTERNAL') || die();
-
-require_login();
+if (!defined('MOODLE_INTERNAL')) {
+    // It must be included from a Moodle page.
+    die('Direct access to this script is forbidden.');
+}
 
 $id = required_param('cmid', PARAM_INT); // Course Module ID.
 $userid = required_param('userid', PARAM_INT);

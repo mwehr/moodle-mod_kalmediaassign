@@ -24,11 +24,11 @@
 
 require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/config.php');
 
-defined('MOODLE_INTERNAL') || die();
+defined('MOODLE_INTERNAL') || die;
 
 global $PAGE;
 
-$PAGE->set_url('/mod/kalmediares/backup/moodle2/backup_kalmediaassign_stepslib.php');
+$PAGE->set_url('/mod/kalmediaassign/backup/moodle2/backup_kalmediaassign_stepslib.php');
 
 require_login();
 
