@@ -3,6 +3,7 @@ Change log of YU Kaltura Media Assignment
 
 Version 1.2.1
 
+* fixed some statements in single_submission_form.php, according to changes of local plugin (local_yukaltura).
 * fixed some statements in preview.php, based on JSDoc warnings.
 
 Version 1.2.0
