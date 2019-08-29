@@ -165,8 +165,6 @@ function kalmediaassign_get_remainingdate($duetime) {
 
      $remain .= $minutes;
 
-    //$remain .= gmdate('h:i', $diff);
-
     return $remain;
 }
 
